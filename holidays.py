@@ -1,5 +1,6 @@
 import datetime
-import requests, json
+import requests
+import json
 import tweepy
 
 api_key = "rkq7sajRcLyN1axBEEi12jTgh"
@@ -39,15 +40,19 @@ diff_date = str(diff_date.days)
 # テキストを組み立てる
 holiday_text = '次の祝日（' + near_holiday_value + '）まではあと' + diff_date + '日です。'
 
-# print(holiday_text)   # 次の祝日（敬老の日）までは21日です。
-
 # TLへの投稿テスト
 # print("文章を入力してください。")
 # text = input()  # ユーザーの入力を取得
 # api.update_status(text)
 
-
+now = datetime.datetime.now()
+now = str(now)
 # holiday_textの投稿
-text = "@reentrant1732 今日の巡回結果だよ！\n \n" + holiday_text + '\n'
+text = "@reentrant1732 今日の巡回結果だよ！\n \n" + holiday_text + '\n \n' + '[実行時間] \n' + now
 api.update_status(text)
+
+
+
+
+
 
