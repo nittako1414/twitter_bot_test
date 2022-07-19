@@ -48,7 +48,7 @@ holiday_text = '次の祝日（' + near_holiday_value + '）まではあと' + d
 now = datetime.datetime.now()
 now = str(now)
 # holiday_textの投稿
-text = "@reentrant1732 今日の巡回結果だよ！\n \n" + holiday_text + '\n \n' + '[実行時間] \n' + now
+text = "@reentrant1732 \n\n今日の巡回結果だよ！\n \n" + holiday_text + '\n \n' + '[実行時間] \n' + now
 api.update_status(text)
 
 
