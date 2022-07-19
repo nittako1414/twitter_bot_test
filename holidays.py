@@ -37,7 +37,7 @@ diff_date = near_holiday_date - today
 # 文字列に変換
 diff_date = str(diff_date.days)
 # テキストを組み立てる
-holiday_text = '次の祝日（' + near_holiday_value + '）までは' + diff_date + '日です。'
+holiday_text = '次の祝日（' + near_holiday_value + '）まではあと' + diff_date + '日です。'
 
 # print(holiday_text)   # 次の祝日（敬老の日）までは21日です。
 
